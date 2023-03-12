@@ -1,0 +1,29 @@
+body{
+    background-color: beige;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.section-block__img{
+    max-width: 200px;
+    display: none;
+}
+.section-block__label{
+    display: block;
+    cursor: pointer;
+    transition: .8s ease-out;
+}
+.section-block__label:hover .section-block__img{
+    background-color: blue;
+    display: block;
+}
+.section-block__input{
+    appearance: none;
+    position: absolute;
+}
+.section-block__input:checked+.section-block__img{
+display: block;
+}
